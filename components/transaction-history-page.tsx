@@ -3,17 +3,8 @@
 import { useState } from "react"
 import { format } from "date-fns"
 import { Calendar as CalendarIcon, Search, Plus } from "lucide-react"
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from "recharts"
-
 import { Button } from "@/components/ui/button"
 import { Calendar } from "@/components/ui/calendar"
-import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-} from "@/components/ui/command"
 import {
   Popover,
   PopoverContent,
@@ -81,12 +72,12 @@ export function TransactionHistoryPageComponent() {
     return true
   })
 
-  const categoryData = categories.map(cat => ({
-    name: cat.label,
-    value: filteredTransactions
-      .filter(t => t.category === cat.value && t.amount < 0)
-      .reduce((sum, t) => sum + Math.abs(t.amount), 0)
-  })).filter(cat => cat.value > 0)
+  // const categoryData = categories.map(cat => ({
+  //   name: cat.label,
+  //   value: filteredTransactions
+  //     .filter(t => t.category === cat.value && t.amount < 0)
+  //     .reduce((sum, t) => sum + Math.abs(t.amount), 0)
+  // })).filter(cat => cat.value > 0)
 
   return (
     <div className="container mx-auto p-6">

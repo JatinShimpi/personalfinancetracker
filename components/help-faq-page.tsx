@@ -1,14 +1,13 @@
 "use client"
 
 import { useState } from "react"
-import { Search, ChevronDown, MessageSquare, Mail } from "lucide-react"
+import { Search, MessageSquare, Mail } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
@@ -29,7 +28,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 
 const faqs = [

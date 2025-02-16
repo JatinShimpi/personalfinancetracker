@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Plus, CreditCard, Wallet, Briefcase, ChevronDown, Search } from "lucide-react"
+import { Plus, CreditCard, Wallet, Briefcase, Search } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
